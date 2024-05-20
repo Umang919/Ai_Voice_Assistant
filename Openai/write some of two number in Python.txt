@@ -1,0 +1,31 @@
+OpenAI response for Prompt: service using artificial intelligence write some of two number in Python 
+ *************************
+
+
+
+#First, we need to import the necessary libraries
+from flask import Flask, request, jsonify
+import numpy as np
+import tensorflow as tf
+
+#Next, we create an instance of the Flask application
+app = Flask(__name__)
+
+#Then, we define a function for adding two numbers using artificial intelligence 
+def add_numbers():
+    #We take the input from the user using request and convert it to float
+    num1 = float(request.args.get('num1'))
+    num2 = float(request.args.get('num2'))
+    
+    #Next, we define the input layer for the artificial intelligence model
+    input_layer = tf.keras.layers.Input(shape=(2,))
+    
+    #Then, we add a dense layer with 2 units and relu activation function
+    dense_layer = tf.keras.layers.Dense(units=2, activation='relu')(input_layer)
+    
+    #Finally, we add a dense layer with 1 unit and linear activation function for the output
+    output_layer = tf.keras.layers.Dense(units=1, activation='linear')(dense_layer)
+    
+    #We compile the model with mean-squared error as the loss function and Adam optimizer
+    model = tf.keras.Model(inputs=input_layer, outputs=output_layer)
+    model.compile(loss='mse

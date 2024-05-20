@@ -1,0 +1,14 @@
+OpenAI response for Prompt: using artificial intelligence write two number of sum in Python 
+ *************************
+
+
+
+# Initializing two numbers
+num1 = 38
+num2 = 91
+
+# Using artificial intelligence to compute the sum of the two numbers
+sum = num1 + num2
+
+# Printing the sum
+print(num1, "+", num2, "=", sum)
