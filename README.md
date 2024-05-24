@@ -43,28 +43,13 @@ This project is an AI voice assistant that utilizes OpenAI's API for natural lan
 2. **Give Voice Commands:**
     - **Open Applications:** Say commands like "open YouTube" or "open Visual Studio Code".
     - **Ask Questions:** Ask any question you have, and the assistant will respond using OpenAI's API.
-    - **Generate Python Code:** Ask the assistant to "write a Python program for the sum of two numbers," and it will create a text file with the question and the generated Python code.
+    - **Generate Code:** Ask the assistant to "write a program for the sum of two numbers," and it will create a text file with the question and the generated code.
 
 ## Example Commands
 
 - "Open YouTube"
 - "Open Visual Studio Code"
 - "Write a Python program to calculate the sum of two numbers"
-
-## Project Structure
-
-```
-AI-Voice-Assistant/
-│
-├── .gitignore
-├── .env
-├── README.md
-├── requirements.txt
-├── main.py
-├── utils.py
-└── generated_code/
-    ├── example.txt
-```
 
 ## License
 
@@ -79,7 +64,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Voice Commands:**
   - Open applications like YouTube and Visual Studio Code.
-  - Interact with the user via natural language processing.
+  - Interact with the user.
   - Generate Python code and save it to a text file.
 
 ### Commands Overview
